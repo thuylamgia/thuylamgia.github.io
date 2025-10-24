@@ -1,5 +1,11 @@
-fetch("components/header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
+document.getElementById("header").innerHTML = `
+  <header>
+    <h1><a href="index.html">Thủy Lâm Gia</a></h1>
+    <nav>
+      <ul>
+        <li><a href="ban-do.html">Bản đồ</a></li>
+        <li><a href="chinh-sach.html">Chính sách</a></li>
+      </ul>
+    </nav>
+  </header>
+`;
