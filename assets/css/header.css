@@ -1,13 +1,18 @@
-/* ========== HEADER ========== */
+/* ===== HEADER ===== */
 header {
-  background-color: #333;
+  background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding: 25px 0 15px;
+  padding: 30px 0 20px;
 }
 
 header h1 {
-  font-size: 28px;
-  font-weight: 600;
   margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
 }
