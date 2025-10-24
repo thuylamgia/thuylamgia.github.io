@@ -1,4 +1,6 @@
-/* ==== Reset & Cấu trúc chung ==== */
+/* =============================
+   RESET CHUNG
+============================= */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -7,19 +9,23 @@ body {
   color: #222;
 }
 
-/* ==== HEADER ==== */
+/* =============================
+   HEADER
+============================= */
 header {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding: 35px 0 25px;
+  padding: 30px 0 20px;
 }
 
-/* ==== MENU ==== */
+/* =============================
+   THANH MENU (NAV)
+============================= */
 nav {
   background-color: #2f2f2f;
   text-align: center;
-  padding: 14px 0;
+  padding: 12px 0;
 }
 
 nav ul {
@@ -36,24 +42,21 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 400;
-  letter-spacing: 0.4px;
-  transition: opacity 0.2s ease;
+  font-weight: 400; /* thanh mảnh */
+  letter-spacing: 0.5px;
 }
 
-nav ul li a:hover {
-  opacity: 0.85;
-}
-
-/* ==== MAIN CONTENT ==== */
+/* =============================
+   NỘI DUNG CHÍNH
+============================= */
 main {
-  padding: 20px 10px;
+  padding: 20px 10px; /* 20px trên-dưới, 10px trái-phải */
 }
 
 .room-list {
   background: white;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 20px auto; /* khoảng cách giữa khối với phần trên và dưới */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -61,55 +64,58 @@ main {
   width: 100%;
 }
 
-.room-list h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
+/* Bỏ khung viền Google Sheet nhúng */
 iframe {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  width: 100%;
-  height: 300px;
 }
 
-/* ==== FOOTER ==== */
+/* =============================
+   FOOTER
+============================= */
 footer {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
   padding: 20px 0;
   margin-top: 40px;
-  font-size: 14px;
 }
 
-/* ==== NÚT LIÊN HỆ ==== */
+/* =============================
+   NÚT LIÊN HỆ (Zalo & Phone)
+============================= */
 .contact-buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ Tự xuống hàng khi hẹp màn hình */
+  gap: 10px;
   margin: 30px 0 10px;
+  text-align: center;
 }
 
 .contact-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 6px 10px;
-  padding: 10px 22px;
+  margin: 6px 12px;
+  padding: 10px 24px;
   border-radius: 50px;
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.2s ease;
   color: white;
+  width: auto;       /* ✅ nút co theo nội dung */
+  min-width: unset;  /* ✅ bỏ giới hạn tối thiểu */
 }
 
 .zalo-btn {
-  background-color: #0a66c2;
+  background-color: #0a66c2; /* xanh Zalo */
 }
 
 .phone-btn {
-  background-color: #28a745;
+  background-color: #28a745; /* xanh lá điện thoại */
 }
 
 .contact-btn:hover {
@@ -117,21 +123,22 @@ footer {
   opacity: 0.9;
 }
 
-/* ==== RESPONSIVE ==== */
+/* =============================
+   RESPONSIVE
+============================= */
 @media (max-width: 600px) {
+  header {
+    padding: 25px 0 15px;
+  }
+
   nav ul li {
-    display: block;
-    margin: 8px 0;
+    margin: 0 12px;
   }
 
   .contact-btn {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  .room-list {
-    margin: 15px auto;
-    padding: 15px;
+    margin: 8px;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: auto;
   }
 }
