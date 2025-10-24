@@ -1,4 +1,4 @@
-/* Toàn trang */
+/* Cấu trúc chung */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -14,6 +14,9 @@ header, footer {
   background: #000;
   color: white;
   text-align: center;
+}
+
+header {
   padding: 2rem 1rem 1.2rem;
 }
 
@@ -31,10 +34,10 @@ header p {
 footer {
   padding: 1rem;
   font-size: 0.9rem;
-  margin-top: auto; /* luôn nằm ở cuối trang */
+  margin-top: auto;
 }
 
-/* Danh sách phòng trống */
+/* Danh sách phòng */
 .room-list {
   width: 90%;
   max-width: 900px;
@@ -50,18 +53,11 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* Bản đồ full width sát footer */
+/* Bản đồ full width */
 .map-full {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #fff;
-}
-
-.map-full h2 {
-  text-align: center;
-  color: #003366;
-  margin: 1rem 0;
 }
 
 .map-full iframe {
