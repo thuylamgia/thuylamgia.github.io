@@ -8,41 +8,31 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <div id="header"></div>
-  <div id="menu"></div>
 
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Nội dung chính -->
   <main>
     <div class="room-list">
       <h2>Danh Sách Phòng Trống</h2>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQhBctaJpQ1MdmW0TJsFPzEEJ-7cnfAeH-Lj_arb5O5mb428cjPZqQ5PRw1gQGRNof0AnRBXfjYeCZ8/pubhtml"></iframe>
+      <iframe 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpGQjPdxh3xjREdY5qKyfyaDYm3OEgAqHQ7pmWqKZJpMK7zhlT4KXshs3tWNCeK3hGn8G2qPoEcOmh/pubhtml?widget=true&amp;headers=false"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
     </div>
   </main>
 
+  <!-- Liên hệ -->
   <div id="contact"></div>
+
+  <!-- Footer -->
   <div id="footer"></div>
 
+  <!-- Script nạp module -->
   <script src="assets/js/components/header.js"></script>
-  <script src="assets/js/components/menu.js"></script>
   <script src="assets/js/components/footer.js"></script>
   <script src="assets/js/components/contact.js"></script>
-  <script>
-  // Tự động điều chỉnh chiều cao iframe Google Sheets
-  window.addEventListener("message", function(event) {
-    var iframe = document.querySelector("iframe");
-    if (event.data && event.data.height && iframe) {
-      iframe.style.height = event.data.height + "px";
-    }
-  });
-
-  // Nếu Google Sheets hỗ trợ, gửi yêu cầu lấy chiều cao thực
-  window.addEventListener("load", function() {
-    var iframe = document.querySelector("iframe");
-    if (iframe && iframe.contentWindow) {
-      iframe.contentWindow.postMessage({ requestHeight: true }, "*");
-    }
-  });
-</script>
 </body>
 </html>
-
-
