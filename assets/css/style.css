@@ -110,6 +110,7 @@ iframe {
   box-shadow: none !important;
   display: block;
   width: 100%;
+  height: 300px
   border-radius: 6px;
 }
 
@@ -212,3 +213,4 @@ footer {
     width: calc(100% - 30px);
   }
 }
+
