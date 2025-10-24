@@ -1,13 +1,14 @@
-/* ====== Reset & Toàn trang ====== */
+/* ========== RESET CHUNG ========== */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f6f7;
   color: #222;
+  line-height: 1.6;
 }
 
-/* ====== HEADER ====== */
+/* ========== HEADER ========== */
 header {
   background-color: #3d3d3d;
   color: white;
@@ -16,8 +17,9 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
   margin: 0;
+  font-weight: 600;
+  font-size: 28px;
 }
 
 header h1 a {
@@ -25,7 +27,7 @@ header h1 a {
   text-decoration: none;
 }
 
-/* ====== NAVIGATION ====== */
+/* ========== NAVIGATION ========== */
 nav {
   background-color: #2f2f2f;
   text-align: center;
@@ -48,14 +50,13 @@ nav ul li a {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.5px;
-  transition: 0.3s;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ====== MAIN CONTENT ====== */
+/* ========== MAIN CONTENT ========== */
 main {
   padding: 20px 10px;
 }
@@ -68,17 +69,18 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  width: 100%;
 }
 
-/* ====== Tiêu đề Danh sách phòng trống ====== */
+/* Tiêu đề chính của phần nội dung */
 .room-list h2 {
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 400;
   text-transform: capitalize;
-  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
   position: relative;
-  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  color: #222;
 }
 
 .room-list h2::after {
@@ -86,54 +88,42 @@ main {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: #333;
+  background-color: #3d3d3d;
   margin: 8px auto 0;
+  border-radius: 2px;
 }
 
-/* ====== IFRAME (Google Sheet) ====== */
+/* ========== IFRAME ========== */
 iframe {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  width: 100%;
-  height: 300px;
 }
 
-/* ====== FOOTER ====== */
-footer {
-  background-color: #3d3d3d;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-/* ====== Nút liên hệ ====== */
+/* ========== NÚT LIÊN HỆ ========== */
 .contact-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px; /* khoảng cách nút */
-  margin: 20px 0 30px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .contact-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 7px 16px;
-  border-radius: 999px;
+  gap: 8px;
+  margin: 10px;
+  padding: 8px 20px;
+  border-radius: 30px;
   font-size: 15px;
   text-decoration: none;
   font-weight: 500;
-  color: white;
   transition: 0.25s ease;
+  color: white;
   white-space: nowrap;
 }
 
 .zalo-btn {
-  background-color: #0068ff;
+  background-color: #0078ff;
 }
 
 .phone-btn {
@@ -141,22 +131,99 @@ footer {
 }
 
 .contact-btn:hover {
-  transform: translateY(-2px);
   opacity: 0.9;
+  transform: translateY(-1px);
 }
 
-/* ====== Responsive nhỏ gọn ====== */
-@media (max-width: 480px) {
+/* ========== FOOTER ========== */
+footer {
+  background-color: #3d3d3d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ========== TRANG CHÍNH SÁCH ========== */
+.policy-container {
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Tiêu đề chính trong trang Chính sách */
+.policy-container h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  color: #222;
+}
+
+.policy-container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #3d3d3d;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Tiêu đề phụ - chỉnh lại cho hài hòa */
+.policy-container h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.policy-container h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #007b5e;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.policy-container ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.policy-container li {
+  margin-bottom: 6px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
   header h1 {
-    font-size: 1.6rem;
+    font-size: 22px;
   }
 
-  .room-list h2 {
-    font-size: 1.5rem;
+  .room-list h2,
+  .policy-container h2 {
+    font-size: 20px;
   }
 
   .contact-btn {
-    font-size: 14px;
     padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
   }
 }
