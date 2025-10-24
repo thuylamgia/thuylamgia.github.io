@@ -9,9 +9,9 @@ body {
 
 /* Header */
 header {
-  background: #000;
+  background: #3d3d3d; /* Xám đậm */
   color: white;
-  padding: 40px 20px 25px;
+  padding: 40px 20px;
 }
 
 header h1 {
@@ -20,20 +20,15 @@ header h1 {
   font-weight: bold;
 }
 
-header p {
-  font-size: 1.1em;
-  margin-top: 10px;
-}
-
 /* Danh sách phòng trống */
 .room-list {
   margin: 50px auto;
   width: 85%;
   max-width: 850px;
-  background: white;              /* Viền trắng nền */
-  border-radius: 12px;            /* Bo góc */
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ */
-  padding: 25px 20px 30px;        /* Khoảng đệm bên trong */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  padding: 25px 20px 30px;
 }
 
 .room-list h2 {
@@ -51,7 +46,7 @@ iframe {
 
 /* Footer */
 footer {
-  background-color: #000;
+  background-color: #3d3d3d; /* Cùng màu với header */
   color: white;
   text-align: center;
   padding: 15px 10px;
