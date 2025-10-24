@@ -1,7 +1,7 @@
-/* ========== CONTACT BUTTONS ========== */
+/* ===== CONTACT BUTTONS ===== */
 .contact-buttons {
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .contact-btn {
@@ -10,13 +10,14 @@
   justify-content: center;
   gap: 8px;
   margin: 10px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 30px;
   font-size: 15px;
   text-decoration: none;
   font-weight: 500;
   transition: 0.25s ease;
   color: white;
+  white-space: nowrap;
 }
 
 .zalo-btn {
