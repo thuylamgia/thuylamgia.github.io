@@ -1,13 +1,22 @@
-/* ===== MENU ===== */
+/* ========== MENU ========== */
 nav {
   background-color: #2f2f2f;
   text-align: center;
   padding: 10px 0;
 }
 
-nav a {
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
   display: inline-block;
   margin: 0 12px;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -17,6 +26,6 @@ nav a {
   transition: background-color 0.25s ease;
 }
 
-nav a:hover {
-  background-color: #555; /* Đổi nền khi hover */
+nav ul li a:hover {
+  background-color: #555;
 }
