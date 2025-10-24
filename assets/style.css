@@ -1,4 +1,4 @@
-/* Reset chung */
+/* ====== Reset & Toàn trang ====== */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #222;
 }
 
-/* HEADER */
+/* ====== HEADER ====== */
 header {
   background-color: #3d3d3d;
   color: white;
@@ -15,7 +15,17 @@ header {
   padding: 30px 0 20px;
 }
 
-/* NAVIGATION */
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ====== NAVIGATION ====== */
 nav {
   background-color: #2f2f2f;
   text-align: center;
@@ -36,11 +46,16 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 400; /* thanh mảnh */
+  font-weight: 400;
   letter-spacing: 0.5px;
+  transition: 0.3s;
 }
 
-/* MAIN CONTENT */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ====== MAIN CONTENT ====== */
 main {
   padding: 20px 10px;
 }
@@ -53,19 +68,17 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  width: 100%;
 }
 
-/* Tiêu đề Danh Sách Phòng Trống */
+/* ====== Tiêu đề Danh sách phòng trống ====== */
 .room-list h2 {
   text-align: center;
-  text-transform: capitalize;
+  font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: 0.5px;
-  margin-bottom: 25px;
-  font-size: 1.6em;
+  text-transform: capitalize; /* In hoa chữ cái đầu */
+  margin-bottom: 20px;
   position: relative;
-  color: #222;
+  letter-spacing: 0.5px;
 }
 
 .room-list h2::after {
@@ -73,12 +86,20 @@ main {
   display: block;
   width: 60px;
   height: 2px;
-  background-color: #3d3d3d;
-  margin: 10px auto 0;
-  border-radius: 2px;
+  background-color: #333;
+  margin: 8px auto 0;
 }
 
-/* FOOTER */
+/* ====== IFRAME (Google Sheet) ====== */
+iframe {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  width: 100%;
+  height: 300px;
+}
+
+/* ====== FOOTER ====== */
 footer {
   background-color: #3d3d3d;
   color: white;
@@ -87,59 +108,55 @@ footer {
   margin-top: 40px;
 }
 
-iframe {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* ==== Nút liên hệ phía trên footer ==== */
+/* ====== Nút liên hệ ====== */
 .contact-buttons {
-  text-align: center;
-  margin: 20px auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* khoảng cách giữa các nút */
+  flex-wrap: wrap;
+  gap: 12px; /* khoảng cách giữa các nút */
+  margin: 20px 0 30px;
 }
 
 .contact-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 22px;
-  border-radius: 30px;
-  font-size: 16px;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 999px; /* bo tròn nút */
+  font-size: 15px;
   text-decoration: none;
   font-weight: 500;
   color: white;
-  transition: 0.2s ease;
-  width: auto;
-  min-width: fit-content;
-  margin: 5px;
+  transition: 0.25s ease;
+  white-space: nowrap; /* không xuống dòng chữ */
 }
 
 .zalo-btn {
-  background-color: #0068ff; /* xanh Zalo */
+  background-color: #0068ff;
 }
 
 .phone-btn {
-  background-color: #28a745; /* xanh lá điện thoại */
+  background-color: #28a745;
 }
 
 .contact-btn:hover {
-  opacity: 0.85;
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-/* Responsive - giữ nút vừa nội dung trên mọi thiết bị */
-@media (max-width: 600px) {
-  .contact-buttons {
-    flex-direction: column;
-    align-items: center;
+/* ====== Responsive nhỏ gọn hơn ====== */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .room-list h2 {
+    font-size: 1.5rem;
   }
 
   .contact-btn {
-    margin: 10px 0;
+    font-size: 14px;
+    padding: 7px 15px;
   }
 }
