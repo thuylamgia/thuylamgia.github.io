@@ -42,13 +42,13 @@ nav ul li a {
 
 /* MAIN CONTENT */
 main {
-  padding: 20px 10px;
+  padding: 20px 10px; /* 20px trên-dưới, 10px trái-phải */
 }
 
 .room-list {
   background: white;
   max-width: 800px;
-  margin: 20px auto;
+  margin: 20px auto; /* khoảng cách giữa khối với phần trên và dưới */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -56,15 +56,14 @@ main {
   width: 100%;
 }
 
-/* Tiêu đề chính */
+/* Tiêu đề Danh Sách Phòng Trống */
 .room-list h2 {
   text-align: center;
   text-transform: capitalize; /* In hoa chữ cái đầu */
-  font-weight: 400; /* mảnh hơn */
+  font-weight: 400; /* Nét mảnh hơn */
   letter-spacing: 0.5px;
-  font-size: 1.7em;
-  margin-top: 0;
   margin-bottom: 25px;
+  font-size: 1.6em;
   position: relative;
   color: #222;
 }
@@ -73,18 +72,10 @@ main {
   content: "";
   display: block;
   width: 60px;
-  height: 3px;
-  background-color: #2f2f2f;
+  height: 2px;
+  background-color: #3d3d3d;
   margin: 10px auto 0;
   border-radius: 2px;
-}
-
-/* IFRAME */
-iframe {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  width: 100%;
 }
 
 /* FOOTER */
@@ -96,10 +87,16 @@ footer {
   margin-top: 40px;
 }
 
-/* ==== Nút liên hệ ==== */
+iframe {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ==== Nút liên hệ phía trên footer ==== */
 .contact-buttons {
   text-align: center;
-  margin: 25px 0 30px;
+  margin: 30px 0;
 }
 
 .contact-btn {
@@ -116,35 +113,25 @@ footer {
   transition: 0.2s ease;
   width: auto;
   min-width: fit-content;
+  margin: 0 12px; /* Giãn nhẹ khoảng cách giữa các nút */
 }
 
 .zalo-btn {
-  background-color: #0068ff;
+  background-color: #0068ff; /* xanh Zalo */
 }
 
 .phone-btn {
-  background-color: #28a745;
+  background-color: #28a745; /* xanh lá điện thoại */
 }
 
 .contact-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  nav ul li {
-    margin: 0 10px;
-  }
-
-  .room-list {
-    margin: 15px auto;
-    padding: 15px;
-  }
-
   .contact-btn {
     display: block;
     margin: 10px auto;
-    width: fit-content;
   }
 }
