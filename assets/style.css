@@ -11,7 +11,7 @@ header {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 header h1 {
@@ -19,27 +19,36 @@ header h1 {
   font-size: 2em;
 }
 
-/* Menu */
+/* Thanh menu (tách riêng với header) */
+nav {
+  background-color: #2f2f2f;
+  text-align: center;
+  padding: 10px 0;
+}
+
 nav ul {
   list-style: none;
+  margin: 0;
   padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  display: inline-flex;
+  gap: 40px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1rem;
+  padding: 6px 10px;
 }
 
+/* Loại bỏ toàn bộ hiệu ứng */
 nav ul li a:hover,
 nav ul li a:focus,
 nav ul li a:active {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  background: none;
 }
 
 /* Danh sách phòng trống */
@@ -57,7 +66,6 @@ nav ul li a:active {
   color: #222;
 }
 
-/* Loại bỏ viền iframe */
 .room-list iframe {
   border: none;
   outline: none;
