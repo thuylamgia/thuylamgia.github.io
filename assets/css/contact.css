@@ -1,8 +1,6 @@
 /* ========== CONTACT BUTTONS ========== */
 .contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  text-align: center;
   margin: 30px 0;
 }
 
@@ -10,28 +8,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  color: white;
-  border: none;
-  border-radius: 24px;
+  gap: 8px;
+  margin: 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  border-radius: 30px;
+  font-size: 15px;
   text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.contact-btn svg {
-  margin-right: 8px;
-}
-
-.contact-btn:hover {
-  transform: translateY(-2px);
+  font-weight: 500;
+  transition: 0.25s ease;
+  color: white;
 }
 
 .zalo-btn {
-  background-color: #007aff;
+  background-color: #0078ff;
 }
 
 .phone-btn {
   background-color: #28a745;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
