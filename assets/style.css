@@ -30,19 +30,23 @@ header p {
   margin: 50px auto;
   width: 85%;
   max-width: 850px;
+  background: white;              /* Viền trắng nền */
+  border-radius: 12px;            /* Bo góc */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng nhẹ */
+  padding: 25px 20px 30px;        /* Khoảng đệm bên trong */
 }
 
 .room-list h2 {
   color: #1a1a1a;
   font-size: 1.4em;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: 600;
 }
 
 iframe {
   border: none;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 /* Footer */
