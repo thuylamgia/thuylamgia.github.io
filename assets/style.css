@@ -1,17 +1,17 @@
 /* Tổng thể */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f5f6f7;
+  background-color: #f7f9fb;
   color: #222;
   text-align: center;
 }
 
 /* Header */
 header {
-  background-color: #000;
+  background: #000;
   color: white;
-  padding: 35px 20px 25px;
+  padding: 40px 20px 25px;
 }
 
 header h1 {
@@ -27,16 +27,16 @@ header p {
 
 /* Danh sách phòng trống */
 .room-list {
-  margin: 40px auto;
-  width: 90%;
-  max-width: 900px;
+  margin: 50px auto;
+  width: 85%;
+  max-width: 850px;
 }
 
 .room-list h2 {
-  color: #1b3b6f;
-  font-weight: 600;
+  color: #1a1a1a;
   font-size: 1.4em;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 iframe {
