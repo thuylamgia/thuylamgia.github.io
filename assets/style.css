@@ -1,110 +1,60 @@
-/* Tổng thể */
+/* Reset chung */
 body {
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
   background-color: #f5f6f7;
   color: #222;
 }
 
-/* Header */
+/* HEADER */
 header {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding-top: 40px;   /* tăng chiều cao phía trên */
-  padding-bottom: 20px; /* thêm khoảng đệm dưới */
-  position: relative;
+  padding: 30px 0 20px;
 }
 
-/* Tiêu đề chính */
-header h1 {
-  margin: 0;
-  font-size: 2.4em;   /* tăng kích thước chữ */
-  font-weight: bold;
-  letter-spacing: 1px; /* tạo cảm giác thoáng hơn */
-}
-
-/* Thanh menu */
+/* NAVIGATION */
 nav {
   background-color: #2f2f2f;
-  margin-top: 10px;
-  padding: 10px 0;
+  text-align: center;
+  padding: 12px 0;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 400; /* thanh mảnh */
+  letter-spacing: 0.5px;
 }
 
-nav ul li a {
-  font-weight: 400; /* hoặc 300 nếu bạn muốn mảnh hơn nữa */
-  letter-spacing: 0.5px; /* tăng nhẹ khoảng cách giữa các chữ cho thanh thoáng */
-}
-
-/* Phần chính */
+/* MAIN CONTENT */
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px 10px;
-}
-
-.room-list {
+  max-width: 800px;
+  margin: 40px auto;
   background: white;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.room-list h2 {
-  text-align: center;
-  color: #222;
-}
-
-/* Bảng Google Sheets nhúng */
-iframe {
-  border: none;
-  width: 100%;
-  height: 350px;
-}
-
-/* Footer */
+/* FOOTER */
 footer {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding: 25px 10px;
-  font-size: 0.95em;
+  padding: 20px 0;
+  margin-top: 40px;
 }
-
-/* Đáp ứng di động */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .room-list {
-    padding: 15px;
-    margin: 20px;
-  }
-}
-
-
