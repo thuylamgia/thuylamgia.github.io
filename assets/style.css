@@ -1,4 +1,4 @@
-/* Cấu hình tổng thể */
+/* Tổng thể */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@ header h1 {
   font-size: 2em;
 }
 
-/* Thanh menu */
+/* Menu */
 nav ul {
   list-style: none;
   padding: 0;
@@ -29,23 +29,17 @@ nav ul {
   gap: 30px;
 }
 
-nav ul li {
-  display: inline;
-}
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
-/* Không hiệu ứng hover */
 nav ul li a:hover,
-nav ul li a:active,
-nav ul li a:focus {
-  color: white;
+nav ul li a:focus,
+nav ul li a:active {
   text-decoration: none;
-  background: none;
+  color: white;
 }
 
 /* Danh sách phòng trống */
@@ -61,6 +55,12 @@ nav ul li a:focus {
 .room-list h2 {
   text-align: center;
   color: #222;
+}
+
+/* Loại bỏ viền iframe */
+.room-list iframe {
+  border: none;
+  outline: none;
 }
 
 /* Footer */
