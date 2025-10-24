@@ -28,7 +28,14 @@ iframe {
   border: none;
   border-radius: 10px;
 }
+
 /* Bỏ bo góc cho phần nhúng Google Sheets */
 .room-list iframe {
+  border-radius: 0 !important;
+}
+
+/* Bỏ bo góc cho khung bản đồ */
+.map-container,
+.map-container iframe {
   border-radius: 0 !important;
 }
