@@ -75,7 +75,7 @@ main {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
-  text-transform: capitalize; /* In hoa chữ cái đầu */
+  text-transform: capitalize;
   margin-bottom: 20px;
   position: relative;
   letter-spacing: 0.5px;
@@ -113,7 +113,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px; /* khoảng cách giữa các nút */
+  gap: 14px; /* khoảng cách nút */
   margin: 20px 0 30px;
 }
 
@@ -122,14 +122,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 8px 18px;
-  border-radius: 999px; /* bo tròn nút */
+  padding: 7px 16px;
+  border-radius: 999px;
   font-size: 15px;
   text-decoration: none;
   font-weight: 500;
   color: white;
   transition: 0.25s ease;
-  white-space: nowrap; /* không xuống dòng chữ */
+  white-space: nowrap;
 }
 
 .zalo-btn {
@@ -145,7 +145,7 @@ footer {
   opacity: 0.9;
 }
 
-/* ====== Responsive nhỏ gọn hơn ====== */
+/* ====== Responsive nhỏ gọn ====== */
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.6rem;
@@ -157,6 +157,6 @@ footer {
 
   .contact-btn {
     font-size: 14px;
-    padding: 7px 15px;
+    padding: 6px 14px;
   }
 }
