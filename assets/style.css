@@ -1,90 +1,85 @@
+/* ===== Tổng thể trang ===== */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f5f7;
   margin: 0;
-  padding: 0;
+  background-color: #f4f5f7;
+  color: #222;
 }
 
-/* HEADER */
+/* ===== Header ===== */
 header {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
-  position: relative;
+  padding: 30px 10px 10px;
 }
 
-/* Tiêu đề */
 header h1 {
-  margin: 0;
   font-size: 2em;
+  margin: 0;
   font-weight: bold;
-  padding: 20px 0 10px 0;
 }
 
-/* MENU ngay dưới tiêu đề */
+/* ===== Thanh menu ===== */
 nav {
   background-color: #2f2f2f;
-  width: 100%;
+  text-align: center;
   padding: 10px 0;
-  margin: 0;
-  position: relative;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
+  list-style-type: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  margin: 0;
+  display: inline-flex;
+  gap: 20px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1em;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-/* Không hiệu ứng hover */
+/* Loại bỏ hoàn toàn hiệu ứng hover */
 nav ul li a:hover {
   color: white;
-  text-decoration: none;
+  background: none;
 }
 
-/* MAIN */
+/* ===== Nội dung chính ===== */
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px 0;
+  padding: 40px 0;
+  text-align: center;
 }
 
+/* ===== Danh sách phòng trống ===== */
 .room-list {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 25px;
+  margin: 0 auto;
   width: 70%;
   max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .room-list h2 {
-  text-align: center;
-  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 20px;
 }
 
-iframe {
-  border: none;
+.room-list iframe {
   width: 100%;
   height: 300px;
+  border: none;
+  border-radius: 8px;
 }
 
-/* FOOTER */
+/* ===== Footer ===== */
 footer {
   background-color: #3d3d3d;
   color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9em;
-}
+  text-align: cente
