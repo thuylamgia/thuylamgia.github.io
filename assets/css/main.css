@@ -1,35 +1,37 @@
-/* ========== MAIN CONTENT ========== */
+/* ===== MAIN CONTENT ===== */
 main {
   padding: 20px;
 }
 
-/* Khung chính mỗi trang */
+/* Khung nội dung chính cho mọi trang */
 .room-list,
-.map-container,
-.policy-container {
+.policy-container,
+.map-container {
   background: white;
   max-width: 800px;
   margin: 20px auto;
   padding: 25px 30px;
-  border-radius: 10px; /* Bo góc ngoài */
+  border-radius: 10px; /* Bo ngoài */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
-/* Tiêu đề trang */
+/* Tiêu đề chính trong các phần */
 .room-list h2,
-.map-container h2,
-.policy-container h2 {
+.policy-container h2,
+.map-container h2 {
   text-align: center;
+  text-transform: capitalize;
   font-size: 24px;
   font-weight: 500;
   color: #222;
-  position: relative;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .room-list h2::after,
-.map-container h2::after,
-.policy-container h2::after {
+.policy-container h2::after,
+.map-container h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -39,34 +41,39 @@ main {
   border-radius: 2px;
 }
 
-/* Iframe (Google Sheets & Maps) */
-.room-list iframe,
-.map-container iframe {
+/* Google Maps / Google Sheet */
+.map-container iframe,
+.room-list iframe {
+  border-radius: 0; /* Bỏ bo góc bên trong */
   width: 100%;
-  height: 420px;
-  border: none;
-  border-radius: 0 !important; /* Bỏ bo góc bên trong */
+  height: 400px;
   display: block;
-  margin: 0;
 }
 
-/* Chính sách thuê phòng */
-.policy-container section {
-  background: #fdfdfd;
-  border-left: 4px solid #3d3d3d;
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  border-radius: 6px;
-}
-
+/* Chính sách */
 .policy-container h3 {
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  position: relative;
+}
+
+.policy-container h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #007b5e;
+  margin-top: 6px;
+  border-radius: 2px;
 }
 
 .policy-container ul {
   padding-left: 20px;
+  margin: 10px 0;
 }
 
 .policy-container li {
