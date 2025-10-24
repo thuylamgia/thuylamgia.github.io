@@ -1,13 +1,9 @@
-/* ========== FOOTER ========== */
+/* ===== FOOTER ===== */
 footer {
-  background-color: #2f2f2f;
+  background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
+  margin-top: 40px;
   font-size: 14px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
 }
