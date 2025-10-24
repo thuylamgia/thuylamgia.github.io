@@ -1,0 +1,38 @@
+/* ========== TRANG CHÍNH SÁCH ========== */
+.policy-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.policy-container section {
+  background: #fafafa;
+  border-left: 4px solid #3d3d3d;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+.policy-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+/* ========== TRANG BẢN ĐỒ ========== */
+.map-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== TRANG DANH SÁCH PHÒNG ========== */
+.sheet-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
