@@ -1,9 +1,9 @@
-/* Tổng thể trang */
+/* Tổng thể */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #f5f6f7;
-  color: #333;
+  color: #222;
   text-align: center;
 }
 
@@ -26,25 +26,23 @@ header p {
 }
 
 /* Danh sách phòng trống */
-.room-section {
-  max-width: 900px;
+.room-list {
   margin: 40px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  text-align: left;
+  width: 90%;
+  max-width: 900px;
 }
 
-.room-section h2 {
-  text-align: center;
+.room-list h2 {
   color: #1b3b6f;
+  font-weight: 600;
+  font-size: 1.4em;
   margin-bottom: 15px;
 }
 
 iframe {
   border: none;
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 /* Footer */
