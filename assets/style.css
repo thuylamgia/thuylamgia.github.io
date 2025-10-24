@@ -50,6 +50,11 @@ nav ul li a {
   font-weight: bold;
 }
 
+nav ul li a {
+  font-weight: 400; /* hoặc 300 nếu bạn muốn mảnh hơn nữa */
+  letter-spacing: 0.5px; /* tăng nhẹ khoảng cách giữa các chữ cho thanh thoáng */
+}
+
 /* Phần chính */
 main {
   display: flex;
@@ -101,4 +106,5 @@ footer {
     margin: 20px;
   }
 }
+
 
