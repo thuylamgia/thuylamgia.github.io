@@ -5,23 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thủy Lâm Gia</title>
   <link rel="stylesheet" href="assets/style.css" />
-  <style>
-    /* Ẩn thanh tiêu đề đen của Google My Maps */
-    .map-clean iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      display: block;
-      filter: brightness(100%);
-    }
-    /* Giúp khung map full chiều ngang */
-    .map-clean {
-      width: 100%;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -29,22 +12,22 @@
     <p>0788677856</p>
   </header>
 
-  <!-- Danh sách phòng -->
-  <section class="room-list">
-    <h2>📋 Danh sách phòng trống</h2>
-    <iframe 
-      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQhBctaJpQ1MdmW0TJsFPzEEJ-7cnfAeH-Lj_arb5O5mb428cjPZqQ5PRw1gQGRNof0AnRBXfjYeCZ8/pubhtml"
-      width="100%" height="300">
-    </iframe>
-  </section>
+  <main>
+    <section class="room-section">
+      <h2>📋 Danh sách phòng trống</h2>
+      <iframe 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQhBctaJpQ1MdmW0TJsFPzEEJ-7cnfAeH-Lj_arb5O5mb428cjPZqQ5PRw1gQGRNof0AnRBXfjYeCZ8/pubhtml"
+        width="100%" height="300">
+      </iframe>
+    </section>
+  </main>
 
-  <!-- Bản đồ sạch không có thanh đen -->
-  <div class="map-clean">
+  <!-- Bản đồ full chiều ngang, sát footer -->
+  <div class="map-frame">
     <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.419087289015!2d106.666839!3d10.776889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b5b3f0e91%3A0x123456789abcdef!2sTh%E1%BB%A7y%20L%C3%A2m%20Gia!5e0!3m2!1svi!2s!4v0000000000000"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      src="https://www.google.com/maps/d/u/0/embed?mid=1X9MuY_GAWXjPFYByPNaegiHbpPph6sg&ehbc=2E312F"
+      allowfullscreen
+      loading="lazy">
     </iframe>
   </div>
 
