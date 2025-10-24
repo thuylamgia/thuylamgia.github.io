@@ -1,30 +1,17 @@
 /* ========== MENU ========== */
 nav {
-  background-color: #2f2f2f;
+  background-color: #444;
   text-align: center;
   padding: 10px 0;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 12px;
-}
-
-nav ul li a {
+nav a {
   color: white;
-  text-decoration: none;
-  font-weight: 400;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: background-color 0.25s ease;
+  font-weight: 500;
+  margin: 0 25px;
+  transition: 0.25s ease;
 }
 
-nav ul li a:hover {
-  background-color: #555;
+nav a:hover {
+  color: #ffd700;
 }
