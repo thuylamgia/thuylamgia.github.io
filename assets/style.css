@@ -1,70 +1,69 @@
-/* Cấu trúc chung */
+/* Tổng thể trang */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f5f7;
+  background-color: #f8f9fa;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Header & Footer */
-header, footer {
-  background: #000;
-  color: white;
   text-align: center;
 }
 
+/* Header */
 header {
-  padding: 2rem 1rem 1.2rem;
+  background-color: #000;
+  color: white;
+  padding: 30px 20px;
 }
 
 header h1 {
+  font-size: 2.2em;
   margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 header p {
-  margin: 0.4rem 0 0;
-  font-size: 1.1rem;
+  font-size: 1.1em;
+  margin-top: 8px;
 }
 
-footer {
-  padding: 1rem;
-  font-size: 0.9rem;
-  margin-top: auto;
-}
-
-/* Danh sách phòng */
-.room-list {
-  width: 90%;
+/* Phần danh sách phòng */
+.room-section {
   max-width: 900px;
-  background: #fff;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
-.room-list h2 {
-  color: #003366;
-  margin-bottom: 1rem;
+.room-section h2 {
+  text-align: center;
+  color: #1b3b6f;
 }
 
-/* Bản đồ full width */
-.map-full {
+/* Bản đồ My Maps full width, ẩn thanh đen */
+.map-frame {
+  position: relative;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  height: 480px;
+  overflow: hidden;
+  margin-top: 40px;
 }
 
-.map-full iframe {
-  display: block;
+.map-frame iframe {
+  position: absolute;
+  top: -40px; /* cắt bỏ thanh đen phía trên */
+  left: 0;
   width: 100%;
-  height: 500px;
+  height: 520px; /* cao hơn để bù phần bị cắt */
   border: none;
-  margin: 0;
-  padding: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.95em;
 }
