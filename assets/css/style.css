@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
+/* ========== HEADER ========== */
 header {
   background-color: #3d3d3d;
   color: white;
@@ -27,7 +27,7 @@ header h1 a {
   text-decoration: none;
 }
 
-/* ===== MENU ===== */
+/* ========== MENU (NAV) ========== */
 nav {
   background-color: #2f2f2f;
   text-align: center;
@@ -42,7 +42,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 12px; /* giảm khoảng cách giữa các nút */
+  margin: 0 10px; /* Giảm khoảng cách */
 }
 
 nav ul li a {
@@ -50,13 +50,13 @@ nav ul li a {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 6px;
   transition: background-color 0.25s ease;
 }
 
 nav ul li a:hover {
-  background-color: #555; /* Hover đổi nền */
+  background-color: #555;
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -64,7 +64,7 @@ main {
   padding: 20px;
 }
 
-/* === KHUNG NỘI DUNG CHUNG === */
+/* === KHUNG NỘI DUNG CHUNG (ĐỒNG BỘ GIỮA CÁC TRANG) === */
 .room-list,
 .policy-container,
 .map-container {
@@ -75,7 +75,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  width: calc(100% - 40px); /* giữ khoảng cách 20px mỗi bên */
+  width: calc(100% - 40px); /* chừa 20px mỗi bên */
 }
 
 /* Tiêu đề chính */
@@ -103,13 +103,14 @@ main {
   border-radius: 2px;
 }
 
-/* ========== IFRAME ========== */
+/* ========== GOOGLE IFRAME (Sheets & Maps) ========== */
 iframe {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
   display: block;
   width: 100%;
+  border-radius: 6px;
 }
 
 /* ========== NÚT LIÊN HỆ ========== */
@@ -132,7 +133,6 @@ iframe {
   transition: 0.25s ease;
   color: white;
   white-space: nowrap;
-  width: auto; /* tự co theo nội dung */
 }
 
 .zalo-btn {
@@ -159,29 +159,25 @@ footer {
 }
 
 /* ========== TRANG CHÍNH SÁCH ========== */
-.policy-container h3 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  position: relative;
-  padding-bottom: 6px;
+.policy-container section {
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  border-left: 4px solid #3d3d3d;
+  border-radius: 4px;
+  background: #fafafa;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
 }
 
-.policy-container h3::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: #007b5e;
-  margin-top: 6px;
-  border-radius: 2px;
+.policy-container h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
 }
 
 .policy-container ul {
   padding-left: 20px;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 .policy-container li {
@@ -206,6 +202,13 @@ footer {
   }
 
   nav ul li {
-    margin: 0 8px;
+    margin: 0 6px;
+  }
+
+  .room-list,
+  .policy-container,
+  .map-container {
+    padding: 18px;
+    width: calc(100% - 30px);
   }
 }
