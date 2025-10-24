@@ -11,16 +11,17 @@ header {
   background-color: #3d3d3d;
   color: white;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 0;
+  padding-top: 40px;   /* tăng chiều cao phía trên */
+  padding-bottom: 20px; /* thêm khoảng đệm dưới */
   position: relative;
 }
 
 /* Tiêu đề chính */
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.4em;   /* tăng kích thước chữ */
   font-weight: bold;
+  letter-spacing: 1px; /* tạo cảm giác thoáng hơn */
 }
 
 /* Thanh menu */
@@ -100,3 +101,4 @@ footer {
     margin: 20px;
   }
 }
+
