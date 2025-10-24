@@ -42,22 +42,9 @@ header p {
   margin-bottom: 15px;
 }
 
-/* Phần bản đồ — full width, không viền, không khung đen */
-.map-frame {
-  position: relative;
-  width: 100%;
-  height: 480px;
-  overflow: hidden;
-  margin-top: 30px;
-}
-
-.map-frame iframe {
-  position: absolute;
-  top: -60px;       /* đẩy lên để giấu khung đen của My Maps */
-  left: 0;
-  width: 100%;
-  height: 600px;    /* tăng thêm chiều cao để bù phần bị che */
+iframe {
   border: none;
+  border-radius: 8px;
 }
 
 /* Footer */
