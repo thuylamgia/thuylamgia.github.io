@@ -1,35 +1,18 @@
-/* ========== MAIN CONTENT ========== */
-.policy-container, .map-container {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-  margin-top: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+/* ========== RESET CHUNG ========== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f7;
+  color: #222;
+  line-height: 1.6;
 }
 
-.policy-section, section {
-  margin-bottom: 20px;
+main {
+  padding: 20px;
 }
 
-.policy-section h3, section h3 {
-  border-left: 4px solid #333;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.policy-section ul li, section ul li {
-  margin: 6px 0;
-}
-
-iframe {
-  width: 100%;
-  height: 480px;
-  border: none;
-  border-radius: 10px;
-}
-
-/* === KHUNG NỘI DUNG CHUNG === */
+/* ========== KHUNG NỘI DUNG CHUNG ========== */
 .room-list,
 .policy-container,
 .map-container {
@@ -37,18 +20,126 @@ iframe {
   max-width: 800px;
   margin: 20px auto;
   padding: 25px 30px;
-  border-radius: 12px; /* 🔹 Bo góc ngoài khung */
+  border-radius: 10px; /* Bo góc ngoài */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
-/* === IFRAME (Google Sheets, Google Maps) === */
+/* Tiêu đề chính của mỗi trang */
+.room-list h2,
+.policy-container h2,
+.map-container h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.room-list h2::after,
+.policy-container h2::after,
+.map-container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #3d3d3d;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ========== IFRAME (Google Sheets / Maps) ========== */
 .room-list iframe,
 .map-container iframe {
   width: 100%;
   height: 420px;
   border: none;
-  border-radius: 0; /* 🔸 Bỏ bo góc bên trong */
+  border-radius: 0 !important; /* Bỏ bo góc bên trong */
   display: block;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* ========== LIÊN HỆ ========== */
+.contact-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease;
+  color: white;
+  white-space: nowrap;
+}
+
+.zalo-btn {
+  background-color: #0078ff;
+}
+
+.phone-btn {
+  background-color: #28a745;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* ========== CHÍNH SÁCH (policy) ========== */
+.policy-container section {
+  background: #fdfdfd;
+  border-left: 4px solid #3d3d3d;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.policy-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.policy-container ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.policy-container li {
+  margin-bottom: 6px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .room-list,
+  .policy-container,
+  .map-container {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .room-list h2,
+  .policy-container h2,
+  .map-container h2 {
+    font-size: 20px;
+  }
+
+  .contact-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}
