@@ -70,3 +70,33 @@ iframe {
   outline: none !important;
   box-shadow: none !important;
 }
+
+/* ==== Nút liên hệ phía trên footer ==== */
+.contact-buttons {
+  text-align: center;
+  margin-bottom: 30px; /* cách footer một chút */
+}
+
+.contact-btn {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.zalo-btn {
+  background-color: #0a66c2; /* xanh Zalo */
+}
+
+.phone-btn {
+  background-color: #28a745; /* xanh lá điện thoại */
+}
+
+.contact-btn:hover {
+  opacity: 0.85;
+}
