@@ -1,54 +1,28 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: #f7f9fb;
-  color: #333;
-}
-
-/* Header và Footer — đồng bộ màu đen */
+/* Header và Footer — màu đen, căn giữa hoàn hảo */
 header, footer {
   background: #000000;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 0;
 }
 
-section {
-  margin: 2rem auto;
-  width: 90%;
-  max-width: 900px;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* Căn giữa nội dung header đẹp hơn */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem; /* khoảng cách giữa dòng */
 }
 
-/* Tiêu đề chính màu trắng trong header */
 header h1 {
-  color: white;
+  font-size: 2rem;
   margin: 0;
+  letter-spacing: 1px;
 }
 
-/* Tiêu đề phụ */
-h2 {
-  color: #003366;
-}
-
-ul {
-  line-height: 1.8;
-}
-
-a {
-  color: #003366;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-iframe {
-  border: none;
-  border-radius: 8px;
-  margin-top: 10px;
+header p {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
 }
