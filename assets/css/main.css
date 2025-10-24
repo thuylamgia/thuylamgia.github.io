@@ -45,7 +45,7 @@
   width: 100%;
   border: none;
   display: block;
-  min-height: 500px;
+  min-height: 300px;
   height: auto;          /* Cho phép iframe tự giãn theo nội dung */
   border-radius: 0;      /* Bỏ bo góc */
   overflow: hidden;      /* Ẩn thanh cuộn trong */
