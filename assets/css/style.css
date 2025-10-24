@@ -42,7 +42,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 14px; /* ↓ Giảm khoảng cách giữa các nút */
+  margin: 0 14px; /* Giảm khoảng cách nút */
 }
 
 nav ul li a {
@@ -50,13 +50,13 @@ nav ul li a {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding: 6px 10px; /* ↓ Giảm padding để nút nhỏ gọn hơn */
+  padding: 6px 12px;
   border-radius: 6px;
   transition: background-color 0.25s ease;
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #555; /* Hover đổi màu nền */
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -257,5 +257,6 @@ iframe {
   display: block;
   width: 100%;
 }
+
 
 
