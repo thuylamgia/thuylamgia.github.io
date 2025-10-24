@@ -157,34 +157,74 @@ footer {
   font-size: 14px;
 }
 
-/* ========== TRANG CHÍNH SÁCH ========== */
-.policy-container h3 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 12px;
-  position: relative;
-  padding-bottom: 6px;
+/* ========== TRANG CHÍNH SÁCH (CẢI TIẾN BỐ CỤC) ========== */
+.policy-container {
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
 }
 
-.policy-container h3::after {
+.policy-container h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+  position: relative;
+}
+
+.policy-container h2::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 60px;
   height: 2px;
-  background: #007b5e;
-  margin-top: 6px;
+  background-color: #3d3d3d;
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
-.policy-container ul {
-  padding-left: 20px;
-  margin: 10px 0;
+.policy-section {
+  margin-bottom: 30px;
+  border-left: 4px solid #3d3d3d;
+  padding-left: 18px;
 }
 
-.policy-container li {
-  margin-bottom: 6px;
+.policy-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2f2f2f;
+  margin-bottom: 10px;
+}
+
+.policy-section ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.policy-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.policy-section li::marker {
+  color: #3d3d3d;
+}
+
+.policy-container p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hiệu ứng khi rê chuột vào tiêu đề */
+.policy-section h3:hover {
+  color: #007b5e;
+  transition: color 0.2s ease;
 }
 
 /* ========== RESPONSIVE ========== */
@@ -217,4 +257,5 @@ iframe {
   display: block;
   width: 100%;
 }
+
 
