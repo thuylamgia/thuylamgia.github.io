@@ -1,28 +1,41 @@
-/* Header và Footer — màu đen, căn giữa hoàn hảo */
+/* Header & Footer — màu đen, cân đối, sang trọng */
 header, footer {
   background: #000000;
   color: white;
   text-align: center;
-  padding: 1.5rem 0;
 }
 
-/* Căn giữa nội dung header đẹp hơn */
+/* Tinh chỉnh header cho cân đối */
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.3rem; /* khoảng cách giữa dòng */
+  padding: 2.5rem 1rem;   /* tăng khoảng cách trên–dưới */
+  gap: 0.6rem;            /* giãn nhẹ giữa tên & số điện thoại */
 }
 
+/* Tiêu đề chính */
 header h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;      /* lớn hơn, nổi bật */
+  font-weight: 700;
   margin: 0;
   letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
+/* Số điện thoại nhỏ hơn, nhẹ hơn */
 header p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0;
+  opacity: 0.85;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Footer đồng bộ phong cách */
+footer {
+  padding: 1.2rem;
+  font-size: 0.95rem;
   opacity: 0.9;
 }
