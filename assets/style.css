@@ -1,3 +1,4 @@
+/* ===== Toàn bộ giao diện ===== */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -5,13 +6,28 @@ body {
   color: #333;
 }
 
+/* ===== Header & Footer ===== */
 header, footer {
-  background: #003366;
-  color: white;
+  background: #000000; /* đổi nền đen */
+  color: white;        /* chữ trắng */
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
 }
 
+/* đảm bảo tiêu đề và mô tả đều trắng */
+header h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  color: #dddddd; /* nhẹ hơn một chút cho phụ đề */
+  margin-top: 6px;
+  font-size: 0.95rem;
+}
+
+/* ===== Nội dung chính ===== */
 section {
   margin: 2rem auto;
   width: 90%;
@@ -22,15 +38,37 @@ section {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-h1, h2 { color: #003366; }
+/* ===== Tiêu đề trong phần nội dung ===== */
+h1, h2 {
+  color: #003366; /* tiêu đề bên trong vẫn xanh đậm */
+  margin-top: 0;
+}
 
-ul { line-height: 1.8; }
+/* ===== Danh sách, liên kết, khung nhúng ===== */
+ul {
+  line-height: 1.8;
+}
 
-a { color: #003366; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a {
+  color: #003366;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 iframe {
   border: none;
   border-radius: 8px;
   margin-top: 10px;
+  width: 100%;
+}
+
+/* ===== Footer ===== */
+footer a {
+  color: #ffffff;
+  font-weight: 500;
+}
+footer a:hover {
+  text-decoration: underline;
 }
