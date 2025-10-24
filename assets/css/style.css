@@ -1,4 +1,4 @@
-/* ========== RESET CHUNG ========== */
+/* ===== RESET CHUNG ===== */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
 }
 
-/* ========== HEADER ========== */
+/* ===== HEADER ===== */
 header {
   background-color: #3d3d3d;
   color: white;
@@ -27,7 +27,7 @@ header h1 a {
   text-decoration: none;
 }
 
-/* ========== MENU (NAV) ========== */
+/* ===== MENU ===== */
 nav {
   background-color: #2f2f2f;
   text-align: center;
@@ -42,7 +42,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin: 0 10px; /* Giảm khoảng cách */
+  margin: 0 12px;
 }
 
 nav ul li a {
@@ -50,7 +50,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   border-radius: 6px;
   transition: background-color 0.25s ease;
 }
@@ -59,12 +59,12 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* ========== MAIN CONTENT ========== */
+/* ===== MAIN CONTENT ===== */
 main {
   padding: 20px;
 }
 
-/* === KHUNG NỘI DUNG CHUNG (ĐỒNG BỘ GIỮA CÁC TRANG) === */
+/* ===== KHUNG NỘI DUNG CHUNG ===== */
 .room-list,
 .policy-container,
 .map-container {
@@ -75,10 +75,10 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  width: 100%;
+  width: calc(100% - 40px);
 }
 
-/* Tiêu đề chính */
+/* ===== TIÊU ĐỀ CHUNG ===== */
 .room-list h2,
 .policy-container h2,
 .map-container h2 {
@@ -103,19 +103,31 @@ main {
   border-radius: 2px;
 }
 
-/* ========== GOOGLE IFRAME (Sheets & Maps) ========== */
+/* ===== IFRAME ===== */
 iframe {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  display: block;
   width: 100%;
-  min-height: 400px;
-  border-radius: 0 !important; /* ← Không bo góc */
-  overflow: hidden;
+  height: 460px;
+  border: none;
+  display: block;
+  border-radius: 0;
 }
 
-/* ========== NÚT LIÊN HỆ ========== */
+/* ===== POLICY ===== */
+.policy-container section {
+  background: #fafafa;
+  border-left: 4px solid #3d3d3d;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.policy-container h3 {
+  margin-top: 0;
+  font-size: 17px;
+  color: #111;
+}
+
+/* ===== CONTACT BUTTONS ===== */
 .contact-buttons {
   text-align: center;
   margin: 20px 0;
@@ -150,7 +162,7 @@ iframe {
   transform: translateY(-1px);
 }
 
-/* ========== FOOTER ========== */
+/* ===== FOOTER ===== */
 footer {
   background-color: #3d3d3d;
   color: white;
@@ -160,33 +172,7 @@ footer {
   font-size: 14px;
 }
 
-/* ========== TRANG CHÍNH SÁCH ========== */
-.policy-container section {
-  margin-bottom: 25px;
-  padding: 15px 20px;
-  border-left: 4px solid #3d3d3d;
-  border-radius: 4px;
-  background: #fafafa;
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.05);
-}
-
-.policy-container h3 {
-  font-size: 17px;
-  font-weight: 600;
-  color: #111;
-  margin-bottom: 8px;
-}
-
-.policy-container ul {
-  padding-left: 20px;
-  margin: 6px 0;
-}
-
-.policy-container li {
-  margin-bottom: 6px;
-}
-
-/* ========== RESPONSIVE ========== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   header h1 {
     font-size: 22px;
@@ -204,18 +190,6 @@ footer {
   }
 
   nav ul li {
-    margin: 0 6px;
-  }
-
-  .room-list,
-  .policy-container,
-  .map-container {
-    padding: 18px;
-    width: calc(100% - 30px);
+    margin: 0 8px;
   }
 }
-
-
-
-
-
