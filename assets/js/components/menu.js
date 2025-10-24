@@ -1,3 +1,6 @@
 fetch("components/menu.html")
-  .then(res => res.text())
-  .then(data => document.getElementById("menu").innerHTML = data);
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu").innerHTML = data;
+  })
+  .catch(err => console.error("Không thể tải menu:", err));
