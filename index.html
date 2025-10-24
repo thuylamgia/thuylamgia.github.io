@@ -25,6 +25,24 @@
   <script src="assets/js/components/menu.js"></script>
   <script src="assets/js/components/footer.js"></script>
   <script src="assets/js/components/contact.js"></script>
+  <script>
+  // Tự động điều chỉnh chiều cao iframe Google Sheets
+  window.addEventListener("message", function(event) {
+    var iframe = document.querySelector("iframe");
+    if (event.data && event.data.height && iframe) {
+      iframe.style.height = event.data.height + "px";
+    }
+  });
+
+  // Nếu Google Sheets hỗ trợ, gửi yêu cầu lấy chiều cao thực
+  window.addEventListener("load", function() {
+    var iframe = document.querySelector("iframe");
+    if (iframe && iframe.contentWindow) {
+      iframe.contentWindow.postMessage({ requestHeight: true }, "*");
+    }
+  });
+</script>
 </body>
 </html>
+
 
