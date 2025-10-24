@@ -1,64 +1,24 @@
-/* ===== MAIN CONTENT ===== */
-main {
-  padding: 20px;
-}
+/* ========== TRANG CHÍNH (Danh sách phòng, bản đồ, chính sách) ========== */
 
-/* Khung nội dung chính cho mọi trang */
-.room-list,
-.policy-container,
-.map-container {
-  background: white;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 25px 30px;
-  border-radius: 10px; /* Bo ngoài */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-/* Tiêu đề chính trong các phần */
-.room-list h2,
-.policy-container h2,
-.map-container h2 {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 24px;
-  font-weight: 500;
-  color: #222;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.room-list h2::after,
-.policy-container h2::after,
-.map-container h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: #3d3d3d;
-  margin: 8px auto 0;
-  border-radius: 2px;
-}
-
-/* Google Maps / Google Sheet */
-.map-container iframe,
+/* Danh sách phòng trống */
 .room-list iframe {
-  border-radius: 0; /* Bỏ bo góc bên trong */
-  width: 100%;
-  height: 400px;
-  display: block;
+  height: 300px;
 }
 
-/* Chính sách */
+/* Bản đồ */
+.map-container iframe {
+  height: 400px;
+}
+
+/* Chính sách thuê phòng */
 .policy-container h3 {
   font-size: 18px;
   font-weight: 500;
   color: #333;
   margin-top: 30px;
   margin-bottom: 12px;
-  padding-bottom: 6px;
   position: relative;
+  padding-bottom: 6px;
 }
 
 .policy-container h3::after {
