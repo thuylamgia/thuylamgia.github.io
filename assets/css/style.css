@@ -110,8 +110,9 @@ iframe {
   box-shadow: none !important;
   display: block;
   width: 100%;
-  height: 300px;
+  min-height: 400px; /* Chiều cao tối thiểu */
   border-radius: 6px;
+  overflow: hidden;
 }
 
 /* ========== NÚT LIÊN HỆ ========== */
@@ -213,5 +214,6 @@ footer {
     width: calc(100% - 30px);
   }
 }
+
 
 
