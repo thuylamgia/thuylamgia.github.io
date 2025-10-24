@@ -35,6 +35,6 @@ iframe {
 }
 
 /* Bỏ bo góc cho khung bản đồ */
-.map-container {
+.map-container iframe {
   border-radius: 0 !important;
 }
