@@ -6,15 +6,15 @@ body {
   color: #333;
 }
 
-/* ===== Header & Footer ===== */
+/* ===== Header & Footer (nâu đất đồng bộ) ===== */
 header, footer {
-  background: #000000; /* đổi nền đen */
-  color: white;        /* chữ trắng */
+  background: #5C4033; /* Nâu đất */
+  color: white;
   text-align: center;
   padding: 1.5rem 1rem;
 }
 
-/* đảm bảo tiêu đề và mô tả đều trắng */
+/* ===== Tiêu đề header ===== */
 header h1 {
   color: white;
   font-size: 2rem;
@@ -22,7 +22,7 @@ header h1 {
 }
 
 header p {
-  color: #dddddd; /* nhẹ hơn một chút cho phụ đề */
+  color: #e0d4c8; /* màu chữ phụ nhẹ hơn một chút */
   margin-top: 6px;
   font-size: 0.95rem;
 }
@@ -40,7 +40,7 @@ section {
 
 /* ===== Tiêu đề trong phần nội dung ===== */
 h1, h2 {
-  color: #003366; /* tiêu đề bên trong vẫn xanh đậm */
+  color: #5C4033; /* tiêu đề trong nội dung cũng đồng bộ nâu đất */
   margin-top: 0;
 }
 
@@ -50,7 +50,7 @@ ul {
 }
 
 a {
-  color: #003366;
+  color: #5C4033;
   text-decoration: none;
 }
 a:hover {
